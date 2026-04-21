@@ -1,0 +1,14 @@
+{
+  "name": "frozentory-api",
+  "version": "1.0.0",
+  "description": "Vercel API proxy for FrozeNventory Claude integration",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "devDependencies": {
+    "vercel": "^37.0.0"
+  }
+}
