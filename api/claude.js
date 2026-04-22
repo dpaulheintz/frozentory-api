@@ -18,9 +18,9 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: 'Missing or invalid "type" field. Must be "scan" or "recipe".' });
   }
 
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = process.env.FrozeNventory_ChatGPT_Key;
   if (!apiKey) {
-    return res.status(500).json({ error: 'OPENAI_API_KEY not configured' });
+    return res.status(500).json({ error: 'FrozeNventory_ChatGPT_Key not configured' });
   }
 
   let model;
